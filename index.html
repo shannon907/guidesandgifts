@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Neon Rooftop Courier</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main id="stage">
+    <canvas id="view" width="960" height="540" aria-label="Neon Rooftop Courier"></canvas>
+    <div id="title" class="overlay">
+      <p class="kicker">Dusk city · one delivery</p>
+      <h1>Neon Rooftop Courier</h1>
+      <p class="lede">The package is already on your back. Cross the roofs and reach the lit drop pad.</p>
+      <p class="prompt">Press Space to start</p>
+      <p class="hint">A / D or Left / Right to run<br />Space, W, or Up to jump · hold for a higher hop</p>
+    </div>
+    <div id="win" class="overlay hidden">
+      <p class="kicker">Drop pad</p>
+      <h1>Delivered</h1>
+      <p id="scoreline" class="lede"></p>
+      <p class="prompt">Press Space to replay</p>
+    </div>
+  </main>
+  <script src="js/level.js"></script>
+  <script src="js/player.js"></script>
+  <script src="js/draw.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>
